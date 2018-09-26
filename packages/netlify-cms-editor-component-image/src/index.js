@@ -7,7 +7,7 @@ const image = {
     match && {
       image: match[2],
       alt: match[1],
-      title: match[3],
+      title: match[3]
     },
   toBlock: data => `![${data.alt || ''}](${data.image || ''} "${data.title}")`,
   // eslint-disable-next-line react/display-name
